@@ -1,0 +1,9 @@
+
+
+
+knex.select().from("ARTICLE_MASTER").asCallback(function(err, rows){
+    if(err)
+        console.log(err);
+    else
+        console.table(rows);
+});
